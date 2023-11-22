@@ -45,5 +45,11 @@ def JeuduNombre():
            break           
     if essaie == 0: 
         print("Vous n'avez plus d'essais... LOOOOOOSEEEEER ! ")
-   
+    
+    rejoue = int(input("voulez vous rejouez, si oui mettez 1, si non mettez 0 :"))
+    if rejoue == 1:
+        print("Vous allez recommencez le jeu")
+    else:
+        print("Merci de vôtre participation")
+    #Il faut par contre relancer le programme pour le refaire...
 JeuduNombre()
