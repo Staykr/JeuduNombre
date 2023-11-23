@@ -18,8 +18,8 @@ def ask_int_in_range(message: str, min: int, max: int) -> int:
 borne_min = ask_int("Entrez la borne minimale : ")
 borne_max = ask_int("Entrez la borne maximale : ")
 
-def JeuDuNombre():
-    # Générer un nombre aléatoire entre 2 bornes
+def Numbergame():
+    # Generate a random number between 2 terminals
     print("Devinez le nombre secret entre", borne_min," et ", borne_max)
     print("Vous avez 10 essais !!")
 
@@ -42,9 +42,9 @@ def JeuDuNombre():
         if essaie == 0:
             print("Vous n'avez plus d'essais... LOOOOOOSEEEEER ! ")
 
-        replay = input("Voulez-vous rejouer ? (Oui(yes)/Non(no)): ").lower()
+        replay = input("Voulez-vous continuer à essayer ? (Oui(Yes)/Non(No)): ").lower()
         if replay != "yes":
             print("Merci de votre participation.")
             break
 
-JeuDuNombre()
+Numbergame()
